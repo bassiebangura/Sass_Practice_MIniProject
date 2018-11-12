@@ -166,7 +166,7 @@ footer {
   }
 }
 
-.btn {
+%btn {
   color: $white;
   display: inline-block;
   font-size: 0.85em;
@@ -177,18 +177,23 @@ footer {
   border-radius: 0.35em;
   background-color: $color-primary;  
   margin-top: auto;
+}
 
+.btn {
   &-callout {
+      @extend %btn;
       font-size: 1.1em;
       background-color: $color-secondary;
   }
 
   &-info {
+      @extend %btn;
       font-size: 0.85em;
       background-color: $color-primary;
       margin-top: auto;
   }
 }
+
 
 
 /* MEDIA QUERIES ---------------------------------- */
@@ -228,4 +233,3 @@ footer {
   .intro {
     width: 45%;
   }
-}
