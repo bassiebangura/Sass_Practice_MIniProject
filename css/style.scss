@@ -1,21 +1,21 @@
-/* BASE ------------------------------------------- */
+/* BASE ------------------------------------------------- */
 
 * {
     box-sizing: border-box;
   }
   
   body {
-    color: $color-text;
+    color: #343434;
     font-size: 1rem;
     line-height: 1.5;
-    font-family: $font-stack-primary;
+    font-family: 'Raleway', sans-serif;
     text-align: center;
     margin: 0;
   }
   
   h1,
   h2 {
-    font-family: $font-stack-secondary;
+    font-family: 'Bree Serif', serif;
   }
   
   ul {
@@ -24,10 +24,10 @@
     margin: 0;
   }
   
-  /* HEADER & FOOTER -------------------------------- */
+  /* HEADER & FOOTER ----------------------------------------- */
   
   header {
-    height: 480px;
+    height: 460px;
     background: linear-gradient(#009fe1, #3acec2), 
                 url('../img/bg.jpg') no-repeat;
     background-blend-mode: multiply;
@@ -35,14 +35,13 @@
   }
   
   header h1 {
-    color: $white;
+    color: #fff;
     font-size: 4.8em;
     margin-bottom: 0;
     letter-spacing: 1px;
   }
   
   header p {
-    color: $color-accent;
     font-size: 1.25em;
     margin: 0;
   }
@@ -50,11 +49,11 @@
   footer {
     padding: 2em 0 0;
     height: 100px;
-    background-color: $color-shade;
+    background-color: #eee;
     margin-top: 3.5em;
   }
   
-  /* CONTAINERS ------------------------------------- */
+  /* CONTAINERS ---------------------------------------------- */
   
   .inner {
     padding: 0.5em 1em;
@@ -65,7 +64,7 @@
     padding: 1em 1em 3em; 
   }
   
-  /* COMPONENTS ------------------------------------- */
+  /* COMPONENTS ----------------------------------------------- */
   
   .main-nav {
     margin-top: 1em;
@@ -75,18 +74,18 @@
     display: flex;
     flex-direction: column;
     padding: 1.5em 1em;
-    border: 1px solid $color-shade;
-    border-radius: 0.25em;
+    border: 1px solid #eee;
+    border-radius: .25em;
   }
   
   .card h1 {
-    color: $color-primary; 
+    color: #278da4; 
     margin: 0.35em 0 0;
     line-height: 1.25;
   }
   
   .btn-info {
-    color: $white;
+    color: #fff;
     display: inline-block;
     font-size: 0.85em;
     font-weight: bold;
@@ -94,12 +93,12 @@
     text-transform: uppercase;
     padding: 0.75em 1.5em;
     border-radius: 0.35em;
-    background-color: $color-primary;  
+    background-color: #278da4;  
     margin-top: auto;
   }
   
   
-  /* MEDIA QUERIES ---------------------------------- */
+  /* MEDIA QUERIES ------------------------------------------------- */
   
   @media (max-width: 575px) {
     header {
